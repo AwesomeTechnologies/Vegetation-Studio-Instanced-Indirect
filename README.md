@@ -14,18 +14,20 @@ The VS_indirect.cginc file is located in the Shader subfolder of VegetationStudi
 Currently the instanced indirect rendering is only working on single submesh models. I am working on support for multi submesh.
 
 <i>
-#pragma instancing_options procedural:setup
-#pragma multi_compile GPU_FRUSTUM_ON __
-#include "VS_indirect.cginc"</i>
+#pragma instancing_options procedural:setup</br>
+#pragma multi_compile GPU_FRUSTUM_ON __</br>
+#include "VS_indirect.cginc"</br></i>
+</br>
 
 If the shader is a grass and plant shader you can change the first #pragma to this. That will add a function that scales in/out the grass at the vegetation distance for a smoother transition.
 
 <i>#pragma instancing_options procedural:setupScale</i>
-  
+</br>
+
 If you are updating Speedtree shaders or other shaders that already has the instancing_options pragma add the procedural:setup to the existing #pragma
 
 <i>#pragma instancing_options assumeuniformscaling lodfade maxcount:50 procedural:setup</i>
-
+</br>
 <b>AMPLIFY SHADER EDITOR</b>
 
 If you are using Amplify Shader Editor to make the shader you can add the same settings there. Copy the VS_indirect.cginc to the same folder as the shader and set the include and pragmas in the shader editor like this.
