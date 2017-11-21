@@ -28,6 +28,8 @@ If you are updating Speedtree shaders or other shaders that already has the inst
 
 <i>#pragma instancing_options assumeuniformscaling lodfade maxcount:50 procedural:setup</i>
 </br>
+</br>
+
 <b>AMPLIFY SHADER EDITOR</b>
 
 If you are using Amplify Shader Editor to make the shader you can add the same settings there. Copy the VS_indirect.cginc to the same folder as the shader and set the include and pragmas in the shader editor like this.
