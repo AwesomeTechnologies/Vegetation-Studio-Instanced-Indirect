@@ -19,6 +19,8 @@ Currently the instanced indirect rendering is only working on single submesh mod
 #include "VS_indirect.cginc"</br></i>
 </br>
 
+For shaders with subshaders like a shadow pass the pragma has to be added to all subshaders. 
+
 If the shader is a grass and plant shader you can change the first #pragma to this. That will add a function that scales in/out the grass at the vegetation distance for a smoother transition.
 
 <i>#pragma instancing_options procedural:setupScale</i>
