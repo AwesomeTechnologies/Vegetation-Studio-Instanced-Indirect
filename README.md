@@ -37,5 +37,5 @@ If you are updating Speedtree shaders or other shaders that already has the inst
 If you are using Amplify Shader Editor to make the shader you can add the same settings there. Copy the VS_indirect.cginc to the same folder as the shader and set the include and pragmas in the shader editor like this.
 
 <p align="center">
-  <img src="https://www.awesometech.no/wp-content/uploads/2017/11/Image-257.png" width="350"/>
+  <img src="https://www.awesometech.no/wp-content/uploads/2018/09/Image-539.png" width="350"/>
 </p>
