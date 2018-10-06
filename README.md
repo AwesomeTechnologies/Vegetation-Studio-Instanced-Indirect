@@ -21,6 +21,11 @@ Currently the instanced indirect rendering is only working on single submesh mod
 
 For shaders with subshaders like a shadow pass the pragma has to be added to all subshaders. 
 
+If you are using unity 2018.2+ you should also add <b>forwardadd</b> to the instancing_options pragma. This will add support for addpass in forward mode and multiple lights. 
+<i>
+#pragma instancing_options procedural:setup forwardadd</br>
+</br>
+
 If the shader is a grass and plant shader you can change the first #pragma to this. That will add a function that scales in/out the grass at the vegetation distance for a smoother transition.
 
 <i>#pragma instancing_options procedural:setupScale</i>
