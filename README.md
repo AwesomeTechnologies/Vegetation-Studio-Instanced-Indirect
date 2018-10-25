@@ -11,8 +11,6 @@ Adding this to a shader does not break normal use of the shader. The setup funct
 
 The VS_indirect.cginc file is located in the Shader subfolder of VegetationStudio. If someone wants to include this file with a asset store asset they are free to do this.
 
-Currently the instanced indirect rendering is only working on single submesh models. I am working on support for multi submesh.
-
 <i>
 #pragma instancing_options procedural:setup</br>
 #pragma multi_compile GPU_FRUSTUM_ON __</br>
